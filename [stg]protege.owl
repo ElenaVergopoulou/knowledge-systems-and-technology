@@ -1,0 +1,2462 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_has_routes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_has_routes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_agency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_has_trips -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_has_trips">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_calendar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_has_fare_rules -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_has_fare_rules">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_has_fare_attributes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_has_routes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_has_routes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_fare_attributes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_has_fare_attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_has_fare_attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_has_routes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_has_routes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_has_routes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_agency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_agency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_fare_attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_fare_attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_feed_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_feed_info">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_trips -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_trips">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_routes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_vehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_has_vehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_has_routes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_has_stops -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_has_stops">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_has_stop_times"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_has_stop_times -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_has_stop_times">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_times_has_trips -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_times_has_trips">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_stop_times"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_calendar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_calendar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_routes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_routes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_stop_times -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_has_stop_times">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_has_routes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_has_routes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#after_midnight_trip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#after_midnight_trip">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_fare_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_fare_url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_lang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_lang">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_phone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_timezone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_timezone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#arrival_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#arrival_time">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#bikes_allowed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#bikes_allowed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#block_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#block_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#colour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#colour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#construction_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#construction_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#contains_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#contains_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#currency_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#currency_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#departure_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#departure_time">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#destination_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#destination_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#direction_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#direction_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#dropoff_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#dropoff_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#end_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#end_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_lang -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_lang">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_publisher_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_publisher_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_publisher_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_publisher_url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_version">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#friday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#friday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#make -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#make">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#model">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#monday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#monday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#nodes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#nodes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#origin_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#origin_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#payment_method -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#payment_method">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#payment_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#payment_time">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#pets_allowed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#pets_allowed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#pickup_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#pickup_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_color">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_desc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_long_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_long_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_short_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_short_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_text_color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_text_color">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#route_url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#saturday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#saturday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#service_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#service_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#service_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#service_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_pt_point -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_pt_point">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_pt_sequence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shape_pt_sequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#start_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#start_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_desc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_headsign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_headsign">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_point -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_point">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_sequence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_sequence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_number">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#sunday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#sunday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#thursday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#thursday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#timepoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#timepoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#transfer_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#transfer_duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#transfers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#transfers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trip_heasign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trip_heasign">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trip_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trip_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#tuesday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#tuesday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#underground_stop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#underground_stop">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wednesday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wednesday">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wheelchair_accessible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wheelchair_accessible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wheelchair_boarding -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#wheelchair_boarding">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#zone_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#zone_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attrributes_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_atrributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehcle_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehcle_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_airplane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_airplane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ilektrikos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ilektrikos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ktel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ktel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_suburban_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_suburban_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_private"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_trolley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_trolley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_pubic"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#agency_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#calendar_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_attributes_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#fare_rules_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#feed_info_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#routes_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#shapes_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stop_times_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#stops_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#trips_trolley"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehcle_ferry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_airplane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ktel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ship"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_ilektrikos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_suburban_railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_tram"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenia/ontologies/2020/9/untitled-ontology-3#vehicle_trolley"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
